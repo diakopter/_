@@ -1,17 +1,34 @@
 <html>
 <head>
-<title></title>
+<title>TCB Kernel Loader</title>
 </head>
 
 <body>
 
 <h3>TCB Kernel Loader</h3>
 <p>
-<input type="button" value="Launch TCB Kernel" onclick="eval(document.getElementById('tcbkernel').innerText)"></input>
+Reminder: check your <a href="#"
+onclick="document.getElementById('warning').style.display='inline'"</a>
+assumptions about <strong>privacy</strong> and <strong>integrity</strong></a>
+<span id="warning" style="display:none">: TLS was correctly used to load this page,
+the URL is correct, the code below is correct, neither this device, any of its
+software, nor your environment has ever been compromised, and you are not acting
+under duress or undue influence. Privacy includes secrecy of your data's location
+and the data itself, and secrecy of your identity when you want it (anonymity) for
+any of your activities online or offline. Integrity includes reliability and
+certainty that your data is coming from where you think it is and it hasn't been
+modified more than you expected. This Operating System is reliably secure under
+the above assumptions, but not otherwise. It is designed not to permit disclosure
+or leakage of any information without your express permission and awareness, and
+without recording everything securely online for repudiation if necessary, and all
+communications maintain perfect forward secrecy [under the additional assumption
+that nothing about your recipient is compromised].
+</span>
+<input type="button" value="Launch TCB Kernel"
+onclick="eval(document.getElementById('tcbkernel').innerText)"></input>
 <pre id="tcbkernel">
   console.log("loaded TCB kernel");
 </pre>
-Before launching this operating system, check your <a href="#" onclick="document.getElementById('warning').style.display='inline'"</a>assumptions for <strong>privacy</strong> and <strong>integrity</strong></a><span id="warning" style="display:none">: TLS was correctly used to load this page, the URL is correct, the code below is correct, neither this device, any of its software, nor your environment has ever been compromised, and you are not acting under duress or undue influence. Privacy includes secrecy of your data's location and the data itself, and secrecy of your identity when you want it (anonymity) for any of your activities online or offline. Integrity includes reliability and certainty that your data is coming from where you think it is and it hasn't been modified more than you expected.</span>
 </p>
 </body>
 </html>
